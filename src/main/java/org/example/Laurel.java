@@ -15,6 +15,9 @@ public class Laurel extends Grandma {
     }
 
     public static boolean endsWithVowel(String str){
+        if(str.length()==0){
+            return false;
+        }
         if(str.charAt(0)== str.charAt(str.length()-1)){
             return true;
         }if(str.length()<2){

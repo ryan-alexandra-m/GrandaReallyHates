@@ -25,7 +25,7 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();}
 
-        Grandma grandma = new Laurel();
+        Grandma grandma = new Oona();
 
         System.out.println("My name is " + grandma.getName());
         System.out.println("Guess a word: ");
@@ -35,7 +35,7 @@ public class App {
         boolean right = grandma.likesWord(word);
 
         while (guesses > 1) {
-            if (right == true && knownWords.contains(word)) {
+            if (right && knownWords.contains(word)) {
                 System.out.println("Grandma likes that word!");
                 guesses = guesses - 1;
                 System.out.println(guesses + " guesses left");
