@@ -1,7 +1,7 @@
 package org.example;
 
-public class Betty extends Grandma {
-    public Betty() {
+public class Granny extends Grandma {
+    public Granny() {
         super("Betty");
     }
 

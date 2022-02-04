@@ -2,10 +2,10 @@ package org.example;
 
 import junit.framework.TestCase;
 
-public class BettyTest extends TestCase {
+public class GrannyTest extends TestCase {
 
     public void testBettyLikesWord(){
-        Betty b= new Betty();
+        Granny b= new Granny();
         assertTrue(b.likesWord("tree"));
         assertTrue(b.likesWord("boot"));
         assertFalse(b.likesWord("fog"));
