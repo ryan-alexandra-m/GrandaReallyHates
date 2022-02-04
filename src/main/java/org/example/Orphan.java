@@ -1,9 +1,9 @@
 package org.example;
 import java.lang.Math;
 
-public class Brikeo extends Grandma {
-    public Brikeo() {
-        super("Brikeo");
+public class Orphan extends Grandma {
+    public Orphan() {
+        super("Orphan");
     }
 
     @Override
@@ -11,6 +11,7 @@ public class Brikeo extends Grandma {
         if(str.length()==0){
             return false;
         }
+
         if(str.length()==6){
 
             int one= str.codePointAt(0);
@@ -20,13 +21,15 @@ public class Brikeo extends Grandma {
             int five= str.codePointAt(4);
             int six= str.codePointAt(5);
 
-            int first= (Math.abs(one+two))- (Math.abs(three+four));
-            int second= (Math.abs(three+four))- (Math.abs(five+six));
+            int first= Math.abs((one+two)- (three+four));
+            int second= Math.abs((three+four)- (five+six));
 
             if(first==second){
                 return true;
             }
 
         }return false;
+
+
     }
 }

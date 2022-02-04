@@ -25,7 +25,7 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();}
 
-        Grandma grandma = new Oona();
+        Grandma grandma = new Orphan();
 
         System.out.println("My name is " + grandma.getName());
         System.out.println("Guess a word: ");
