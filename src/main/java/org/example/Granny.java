@@ -2,7 +2,7 @@ package org.example;
 
 public class Granny extends Grandma {
     public Granny() {
-        super("Betty");
+        super("Granny");
     }
 
     @Override
